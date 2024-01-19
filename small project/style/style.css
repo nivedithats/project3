@@ -1,0 +1,58 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+header .logo{
+    width: 150px;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border-bottom: 2px solid #000;
+}
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+}
+header nav ul li a{
+    text-decoration: none;
+    color:#000;
+}
+header nav ul li{
+    position: relative;
+    overflow: hidden;
+    padding: 10px;
+}
+header nav ul li::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;  /* example1*/
+    background-color: #5F6F52;
+    bottom: 0 !; 
+    left: 0; 
+}
+header nav ul li:hover::before{
+    width: 100%; /* example1*/
+    /* left: 0; // example2*/
+    /* top: 0;example3 */
+    bottom: 0;
+    transition: 1s;
+}
+/* header nav ul li:hover a{
+    color: #fff;
+} */
+header nav ul button{
+    border: none;
+    min-width: 150px;
+    font-size: 1.2rem;
+    background-color: #5F6F52;
+    color: #fff;
+    border-radius: 5px;
+}
+
